@@ -1,0 +1,9 @@
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\bin\Debug\netstandard2.0\Italika.Core.deps.json
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\bin\Debug\netstandard2.0\Italika.Core.dll
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\bin\Debug\netstandard2.0\Italika.Core.pdb
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\obj\Debug\netstandard2.0\Italika.Core.csprojAssemblyReference.cache
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\obj\Debug\netstandard2.0\Italika.Core.AssemblyInfoInputs.cache
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\obj\Debug\netstandard2.0\Italika.Core.AssemblyInfo.cs
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\obj\Debug\netstandard2.0\Italika.Core.csproj.CoreCompileInputs.cache
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\obj\Debug\netstandard2.0\Italika.Core.dll
+C:\Users\RAYMUNDO\Documents\Visual Studio 2019\Projects\ItalikaApi\Italika.Core\obj\Debug\netstandard2.0\Italika.Core.pdb
