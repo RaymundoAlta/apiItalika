@@ -3,17 +3,26 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Italika.Core.Entities.ViewModel;
 
 namespace Italika.Core.Interfaces
 {
     public interface IPostRepository
     {
-        Task<IEnumerable<Productos>> GetPosts();
+        Task<IEnumerable<vmProductos>> GetPosts();
 
-        Task<Productos> GetPost(int Id);
+        Task<vmProductos> GetPost(int Id);
 
-        Task<Productos> FilterBySku(string sku);
+        Task<vmProductos> FilterBySku(string sku);
 
-        Task<IEnumerable<Productos>> FilterByModelo(string modelo);
+        Task<IEnumerable<vmProductos>> FilterByModelo(string modelo);
+
+        Task<bool> InsertProduct(Productos producto);
+
+        Task<bool> sp_Inser_Producto(Productos producto, string connstr);
+
+        Task<bool> EditProduct(Productos producto);
+
+        Task<bool> DeleteProduct(int id);
     }
 }
