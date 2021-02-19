@@ -12,5 +12,8 @@ namespace Italika.Core.Interfaces
 
         Task<Productos> GetPost(int Id);
 
+        Task<Productos> FilterBySku(string sku);
+
+        Task<IEnumerable<Productos>> FilterByModelo(string modelo);
     }
 }

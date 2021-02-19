@@ -30,5 +30,16 @@ namespace Italika.Infrastructure.Repositories
             return post;
         }
 
+        public async Task<Productos> FilterBySku(string sku)
+        {
+            var producto = await _context.Productos.FirstOrDefaultAsync(x => x.Sku == sku);
+            return producto;
+        }
+
+        public async Task<IEnumerable<Productos>> FilterByModelo(string modelo)
+        {
+            var productos = await _context.Productos.Where(x => x.Modelo == modelo).ToListAsync();
+            return productos;
+        }
     }
 }

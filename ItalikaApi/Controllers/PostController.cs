@@ -30,8 +30,19 @@ namespace ItalikaApi.Controllers
 
         }
 
-       
+        [HttpGet("FilterBySku")]
+        public async Task<IActionResult> FilterBySku(string sku) 
+        {
+            var producto = await _postRepository.FilterBySku(sku);
+            return Ok(producto);
 
+        }
 
+        [HttpGet("FilterByModelo")]
+        public async Task<IActionResult> FilterByModelo(string modelo)
+        {
+            var productos = await _postRepository.FilterByModelo(modelo);
+            return Ok(productos);
+        }
     }
 }
