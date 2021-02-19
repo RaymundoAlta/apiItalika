@@ -1,0 +1,101 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/italika.js"></script>
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
+            <button id="btnNew" class="btn btn-success">Nuevo</button>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <table id="tblProductos" class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Id</th>
+                        <th>Sku</th>
+                        <th>Fert</th>
+                        <th>Modelo</th>
+                        <th>Tipo</th>
+                        <th>No. Serie</th>
+                        <th>Fecha</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<button id="btnLoadModal" data-toggle="modal" data-target="#mdlNew" hidden></button>
+<!-- Modal -->
+<div class="modal fade" id="mdlNew" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div id="dvId" class="col-md" hidden>
+                        Id<input type="text" id="txtId" class="form-control" disabled />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        Sku<input type="text" id="txtSku" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        Fert<input type="text" id="txtFert" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        Modelo<input type="text" id="txtModelo" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        No. Serie<input type="text" id="txtNoSerie" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        Tipo<input type="text" id="txtTipo" class="form-control" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md">
+                        Fecha<input type="date" id="txtFecha" class="form-control" />
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button id="btnClose" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button id="btnSave" type="button" class="btn btn-success">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
